@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF8F8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#FFE9E9"
+        android:text="Consultar CNPJ"
+        android:textAlignment="center"
+        android:textColor="#CF1313"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/instrucoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:text="Para consultar os dados cadastrais de uma empresa, insira o CNPJ no campo abaixo:"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrucoes"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="CNPJ"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cnpj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#8E0404"
+        android:maxWidth="400dp"
+        android:text="Pesquisar"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/header_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginTop="30dp"
+        android:text="Informações"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/razaoSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_info"
+        android:layout_marginTop="30dp"
+        android:text="Razao Social"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/razaoSocialEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/razaoSocial"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Empresa LTDA"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/razaoSocialEdit"
+        android:layout_marginTop="10dp"
+        android:text="Endereço"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/enderecoEdit"
+        android:layout_width="392dp"
+        android:layout_height="103dp"
+        android:layout_below="@id/endereco"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Rua, número"
+        android:inputType="textMultiLine" />
+
+
+</RelativeLayout>
